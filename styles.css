@@ -1,8 +1,8 @@
 :root {
-    --primary: #cda869; /* Elegant warm stone/gold tone */
-    --secondary: #a3824a;
-    --cta: #cda869;
-    --cta-hover: #dfbc7e;
+    --primary: #FF5A00; /* Vibrant orange */
+    --secondary: #d64a00;
+    --cta: #FF5A00;
+    --cta-hover: #ff752c;
     --bg: #0f1013; /* Very dark slate, almost black */
     --text-main: #f1f5f9;
     --text-muted: #94a3b8;
@@ -82,13 +82,13 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 .btn-primary {
     background-color: var(--cta);
     color: #000;
-    box-shadow: 0 4px 14px rgba(205, 168, 105, 0.2);
+    box-shadow: 0 4px 14px rgba(255, 90, 0, 0.2);
 }
 
 .btn-primary:hover {
     background-color: var(--cta-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(205, 168, 105, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 90, 0, 0.3);
 }
 
 .btn-secondary {
@@ -106,7 +106,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    background-color: rgba(205, 168, 105, 0.1);
+    background-color: rgba(255, 90, 0, 0.15);
     color: var(--primary);
     font-size: 0.85rem;
     font-weight: 600;
@@ -235,7 +235,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 .orb-1 {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(205,168,105,0.4) 0%, rgba(15,16,19,0) 70%);
+    background: radial-gradient(circle, rgba(255,90,0,0.15) 0%, rgba(15,16,19,0) 70%);
     top: -100px;
     left: -200px;
 }
@@ -332,7 +332,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 .pillar-date {
     display: inline-block;
     padding: 0.3rem 0.8rem;
-    background: rgba(205, 168, 105, 0.1);
+    background: rgba(255, 90, 0, 0.1);
     color: var(--primary);
     border-radius: 4px;
     font-weight: 500;
@@ -343,7 +343,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 /* CTA Section */
 .cta-section {
     padding: 8rem 2rem;
-    background: linear-gradient(135deg, rgba(205, 168, 105, 0.05) 0%, var(--bg) 100%);
+    background: linear-gradient(135deg, rgba(255, 90, 0, 0.05) 0%, var(--bg) 100%);
     position: relative;
     z-index: 5;
 }
