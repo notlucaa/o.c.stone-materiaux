@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salle de bain | OC Stone Matériaux</title>
+    <meta name="description" content="Découvrez notre large choix de meubles, d'accessoires et d'ensembles complets pour votre salle de bains.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .product-split { display: flex; align-items: center; gap: 4rem; margin-bottom: 6rem; }
+        .product-split:nth-child(even) { flex-direction: row-reverse; }
+        .product-split img { border-radius: 1rem; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-height: 500px; object-fit: cover; }
+        .product-text { flex: 1; min-width: 300px; }
+        .product-image { flex: 1; min-width: 300px; }
+        @media (max-width: 768px) {
+            .product-split, .product-split:nth-child(even) { flex-direction: column; gap: 2rem; margin-bottom: 3rem; }
+            .product-split img { max-height: 350px; }
+        }
+        .hero-bg {
+            background-color: var(--bg);
+            padding: 10rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://www.ocstone.fr/wp-content/uploads/2025/03/logo-oc-stone-.png" alt="OC Stone Logo">
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">L'Entreprise</a>
+            <div class="nav-dropdown">
+                <a href="materiaux.html" class="active">Nos Matériaux ▼</a>
+                <div class="dropdown-content">
+                    <a href="carrelages.html">Carrelages</a>
+                    <a href="travertin.html">Travertin</a>
+                    <a href="faience.html">Faïence</a>
+                    <a href="sanitaires.html">Sanitaires</a>
+                    <a href="salle-de-bain.html">Salle de bain</a>
+                    <a href="deco.html">Déco</a>
+                </div>
+            </div>
+            <a href="showroom.html">Showroom</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="showroom.html" class="btn-primary">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        
+        <section class="hero-bg">
+            <div class="container container-narrow text-center">
+                <span class="subheading">SALLE DE BAIN</span>
+                <h1>Un large choix de meubles et d'accessoires pour votre salle de bains</h1>
+                <p>Nous travaillons avec un grand nombre de fabricants pour garantir que nous avons les derniers styles et les dernières tendances en matière de design. Nos conseillers experts sont également disponibles pour aider les clients à choisir ce qui conviendra le mieux à leur salle de bains.</p>
+            </div>
+        </section>
+
+        <section class="container product-section bg-light rounded-3xl p-4rem">
+            
+            <!-- Ensembles complets -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">ENSEMBLES</span>
+                    <h2>Ensembles complets</h2>
+                    <p>Nous proposons une vaste sélection d’ensembles complets de meubles pour les salles de bains qui conviendront à tous les styles et à tous les budgets. Nos ensembles comprennent généralement des armoires de toilette, des meubles sous lavabo, des colonnes de rangement, des miroirs, des luminaires et des robinets.<br><br>Nous avons établi des partenariats avec de nombreux fabricants pour vous offrir une large sélection de styles et de designs pour votre salle de bains. Nous nous efforçons constamment de proposer les dernières tendances en matière de meubles et d’accessoires pour les salles de bains. Nos conseillers expérimentés sont également à votre disposition pour vous aider à trouver les meubles qui conviendront parfaitement à votre salle de bains.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/sdb_ensembles.png" alt="Ensembles complets salle de bain">
+                </div>
+            </div>
+
+            <!-- Meubles -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">OC STONE</span>
+                    <h2>Meubles</h2>
+                    <p>Si vous cherchez à acheter des meubles pour votre salle de bains, nous avons également une large sélection de meubles seuls qui conviendront à tous les styles et à tous les budgets. Nos meubles seuls comprennent généralement des armoires de toilette, des meubles sous lavabo, des colonnes de rangement et des étagères.<br><br>Notre vaste réseau de fabricants nous permet de proposer une grande variété de styles et de designs pour votre salle de bains. Nous sommes constamment à la recherche des dernières tendances en matière de meubles et d’accessoires pour les salles de bains pour répondre à vos besoins en matière de design. Nos conseillers experts sont là pour vous aider à choisir les meubles qui conviendront le mieux à votre salle de bains en fonction de vos goûts et de votre budget.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/sdb_meubles.png" alt="Meubles de salle de bain">
+                </div>
+            </div>
+
+            <!-- Accessoires -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">ACCESSOIRES</span>
+                    <h2>Accessoires de salle de bains</h2>
+                    <p>Nous proposons une large sélection d’accessoires pour les salles de bains pour compléter n’importe quel ensemble de meubles ou pour ajouter une touche finale à votre salle de bains. Nos accessoires comprennent généralement des porte-serviettes, des porte-savons, des porte-brosses à dents, des tapis de bain et des rideaux de douche.<br><br>Nous collaborons avec une multitude de fabricants pour vous offrir une vaste sélection de styles et de designs pour votre salle de bains. Nous sommes fiers de proposer les dernières tendances en matière de meubles et d’accessoires pour les salles de bains. Nos conseillers experts sont également disponibles pour vous guider dans votre choix et trouver les meubles qui conviendront parfaitement à votre salle de bains.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/sdb_accessoires.png" alt="Accessoires de salle de bains">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cta-section mt-section">
+            <div class="container container-narrow text-center effect-morphing">
+                <h2>Besoin d'un conseil personnalisé ?</h2>
+                <p>Nos experts sont là pour affiner votre choix et vous proposer un chiffrage précis.</p>
+                <a href="showroom.html" class="btn-primary btn-large mt-4">Nous rendre visite en showroom</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

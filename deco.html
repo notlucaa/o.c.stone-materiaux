@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déco | OC Stone Matériaux</title>
+    <meta name="description" content="Décorez vos extérieurs avec de la pierre intemporelle : fontaines, pavés, et pierres.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .product-split { display: flex; align-items: center; gap: 4rem; margin-bottom: 6rem; }
+        .product-split:nth-child(even) { flex-direction: row-reverse; }
+        .product-split img { border-radius: 1rem; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-height: 500px; object-fit: cover; }
+        .product-text { flex: 1; min-width: 300px; }
+        .product-image { flex: 1; min-width: 300px; }
+        @media (max-width: 768px) {
+            .product-split, .product-split:nth-child(even) { flex-direction: column; gap: 2rem; margin-bottom: 3rem; }
+            .product-split img { max-height: 350px; }
+        }
+        .hero-bg {
+            background-color: var(--bg);
+            padding: 10rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://www.ocstone.fr/wp-content/uploads/2025/03/logo-oc-stone-.png" alt="OC Stone Logo">
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">L'Entreprise</a>
+            <div class="nav-dropdown">
+                <a href="materiaux.html" class="active">Nos Matériaux ▼</a>
+                <div class="dropdown-content">
+                    <a href="carrelages.html">Carrelages</a>
+                    <a href="travertin.html">Travertin</a>
+                    <a href="faience.html">Faïence</a>
+                    <a href="sanitaires.html">Sanitaires</a>
+                    <a href="salle-de-bain.html">Salle de bain</a>
+                    <a href="deco.html">Déco</a>
+                </div>
+            </div>
+            <a href="showroom.html">Showroom</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="showroom.html" class="btn-primary">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        
+        <section class="hero-bg">
+            <div class="container container-narrow text-center">
+                <span class="subheading">DÉCO</span>
+                <h1>Un large choix de pierres pour habiller vos extérieurs</h1>
+                <p>Bienvenue sur la page « Déco extérieure » d’OC Stone, votre spécialiste de la pierre naturelle pour embellir votre espace extérieur. Nous sommes convaincus que nos fontaines en pierre et nos pavés japonais peuvent apporter une touche d’élégance et de sophistication à votre jardin ou votre espace extérieur.</p>
+            </div>
+        </section>
+
+        <section class="container product-section bg-light rounded-3xl p-4rem">
+            
+            <!-- Fontaines -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">OC STONE</span>
+                    <h2>Fontaines</h2>
+                    <p>Nous proposons une large gamme de fontaines en pierre qui apporteront une touche de sérénité et de tranquillité à votre jardin. Nos fontaines sont fabriquées à partir de matériaux naturels de haute qualité et sont disponibles dans différentes tailles et styles pour répondre à tous les goûts et budgets.<br><br>Nous proposons également des services de pose professionnelle pour vous aider à créer un espace extérieur magnifique et harmonieux. Que vous souhaitiez créer une ambiance zen ou contemporaine, nous avons la fontaine en pierre idéale pour vous.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/deco_fontaines.png" alt="Fontaines en pierre">
+                </div>
+            </div>
+
+            <!-- Pierres -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">SÉCO</span>
+                    <h2>Pierres</h2>
+                    <p>En plus de nos fontaines en pierre, nous proposons également une large sélection de pavés japonais et autres pierres de décoration pour vos parterres de fleurs et allées. Ces pierres sont fabriquées à partir de pierre naturelle de haute qualité et sont disponibles dans différentes formes, tailles et couleurs pour vous permettre de personnaliser votre espace extérieur selon vos goûts.<br><br>Les pavés japonais sont particulièrement populaires pour leur esthétique élégante et leur durabilité. Nous proposons également des galets, des pas japonais et des pierres plates pour créer des motifs uniques dans votre jardin. Nos experts en décoration extérieure sont là pour vous conseiller et vous aider à trouver les meilleures solutions pour votre jardin.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/deco_pierres.png" alt="Pierres, pas japonais">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cta-section mt-section">
+            <div class="container container-narrow text-center effect-morphing">
+                <h2>Besoin d'un conseil personnalisé ?</h2>
+                <p>Nos experts sont là pour affiner votre choix et vous proposer un chiffrage précis.</p>
+                <a href="showroom.html" class="btn-primary btn-large mt-4">Nous rendre visite en showroom</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
