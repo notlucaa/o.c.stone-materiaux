@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faïence | OC Stone Matériaux</title>
+    <meta name="description" content="Découvrez notre sélection de faïences de qualité supérieure, pâte rouge et pâte blanche.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .product-split { display: flex; align-items: center; gap: 4rem; margin-bottom: 6rem; }
+        .product-split:nth-child(even) { flex-direction: row-reverse; }
+        .product-split img { border-radius: 1rem; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-height: 500px; object-fit: cover; }
+        .product-text { flex: 1; min-width: 300px; }
+        .product-image { flex: 1; min-width: 300px; }
+        @media (max-width: 768px) {
+            .product-split, .product-split:nth-child(even) { flex-direction: column; gap: 2rem; margin-bottom: 3rem; }
+            .product-split img { max-height: 350px; }
+        }
+        .hero-bg {
+            background-color: var(--bg);
+            padding: 10rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://www.ocstone.fr/wp-content/uploads/2025/03/logo-oc-stone-.png" alt="OC Stone Logo">
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">L'Entreprise</a>
+            <div class="nav-dropdown">
+                <a href="materiaux.html" class="active">Nos Matériaux ▼</a>
+                <div class="dropdown-content">
+                    <a href="carrelages.html">Carrelages</a>
+                    <a href="travertin.html">Travertin</a>
+                    <a href="faience.html">Faïence</a>
+                    <a href="sanitaires.html">Sanitaires</a>
+                    <a href="salle-de-bain.html">Salle de bain</a>
+                    <a href="deco.html">Déco</a>
+                </div>
+            </div>
+            <a href="showroom.html">Showroom</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="showroom.html" class="btn-primary">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        
+        <section class="hero-bg">
+            <div class="container container-narrow text-center">
+                <span class="subheading">FAÏENCE</span>
+                <h1>Nos faïences exceptionnelles</h1>
+                <p>Bienvenue dans notre showroom de faïences exceptionnelles! Nous sommes fiers de proposer une collection unique de faïences de qualité supérieure pour tous les goûts et tous les budgets. Notre sélection de faïences en pâte rouge et blanche, aux multiples couleurs est tout simplement époustouflante.</p>
+            </div>
+        </section>
+
+        <section class="container product-section bg-light rounded-3xl p-4rem">
+            
+            <!-- Pâte rouge -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">OC STONE</span>
+                    <h2>Pâte rouge</h2>
+                    <p>Les faïences en pâte rouge sont un type de céramique décorative apprécié depuis des siècles pour leur beauté et leur durabilité. Elles doivent leur couleur rouge distinctive à l’argile riche en oxydes de fer utilisée pour leur fabrication.<br><br>Les faïences en pâte rouge sont non seulement de beaux objets décoratifs, mais aussi des témoins précieux de l’histoire et de la culture de leur région d’origine.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/faience_rouge.png" alt="Faïence Pâte Rouge">
+                </div>
+            </div>
+
+            <!-- Pâte blanche -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">OC STONE</span>
+                    <h2>Pâte blanche</h2>
+                    <p>Les faïences en pâte blanche sont un type de céramique décorative réputé pour leur élégance et leur délicatesse. Elles sont fabriquées à partir d’une argile blanche fine, riche en kaolin, qui leur donne leur couleur claire et leur texture fine.<br><br>Les faïences en pâte blanche sont des objets de décoration raffinés et appréciés depuis des siècles, qui apportent une touche de sophistication et de charme à tout intérieur.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/faience_blanche.png" alt="Faïence Pâte Blanche">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cta-section mt-section">
+            <div class="container container-narrow text-center effect-morphing">
+                <h2>Besoin d'un conseil personnalisé ?</h2>
+                <p>Nos experts sont là pour affiner votre choix et vous proposer un chiffrage précis.</p>
+                <a href="showroom.html" class="btn-primary btn-large mt-4">Nous rendre visite en showroom</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>

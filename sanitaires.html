@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitaires | OC Stone Matériaux</title>
+    <meta name="description" content="Découvrez nos receveurs et vasques en pierre naturelle pour votre salle de bain.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .product-section { padding-top: 4rem; padding-bottom: 4rem; }
+        .product-split { display: flex; align-items: center; gap: 4rem; margin-bottom: 6rem; }
+        .product-split:nth-child(even) { flex-direction: row-reverse; }
+        .product-split img { border-radius: 1rem; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-height: 500px; object-fit: cover; }
+        .product-text { flex: 1; min-width: 300px; }
+        .product-image { flex: 1; min-width: 300px; }
+        @media (max-width: 768px) {
+            .product-split, .product-split:nth-child(even) { flex-direction: column; gap: 2rem; margin-bottom: 3rem; }
+            .product-split img { max-height: 350px; }
+        }
+        .hero-bg {
+            background-color: var(--bg);
+            padding: 10rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://www.ocstone.fr/wp-content/uploads/2025/03/logo-oc-stone-.png" alt="OC Stone Logo">
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">L'Entreprise</a>
+            <div class="nav-dropdown">
+                <a href="materiaux.html" class="active">Nos Matériaux ▼</a>
+                <div class="dropdown-content">
+                    <a href="carrelages.html">Carrelages</a>
+                    <a href="travertin.html">Travertin</a>
+                    <a href="faience.html">Faïence</a>
+                    <a href="sanitaires.html">Sanitaires</a>
+                    <a href="salle-de-bain.html">Salle de bain</a>
+                    <a href="deco.html">Déco</a>
+                </div>
+            </div>
+            <a href="showroom.html">Showroom</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="showroom.html" class="btn-primary">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        
+        <section class="hero-bg">
+            <div class="container container-narrow text-center">
+                <span class="subheading">SANITAIRES</span>
+                <h1>Vous rêvez d'une salle de bain unique et élégante ?</h1>
+                <p>Ne cherchez plus ! Chez OC Stone, nous avons tout ce dont vous avez besoin pour créer ou embellir votre salle de bain selon vos goûts et vos envies. Nous sommes fiers de vous proposer une large sélection de produits de qualité supérieure, soigneusement sélectionnés pour répondre à vos besoins.</p>
+            </div>
+        </section>
+
+        <section class="container product-section bg-light rounded-3xl p-4rem">
+            
+            <!-- Receveurs et parois de douche -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">OC STONE</span>
+                    <h2>Nos receveurs et parois de douche</h2>
+                    <p>Chez OC Stone, nous sommes passionnés par la conception de salles de bains élégantes et fonctionnelles, et nous sommes fiers de vous offrir une gamme exceptionnelle de receveurs de douche en pierre naturelle, en grès cérame et bien plus encore!<br><br>Avec des dimensions standards ou sur mesure, nous avons tout ce qu’il faut pour répondre à vos besoins et s’adapter parfaitement à votre espace de douche. Nous sommes également spécialisés dans les cabines et les parois de douche.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/san_receveur.png" alt="Receveurs et parois de douche">
+                </div>
+            </div>
+
+            <!-- Vasques -->
+            <div class="product-split">
+                <div class="product-text">
+                    <span class="subheading">SANITAIRES</span>
+                    <h2>Nos vasques</h2>
+                    <p>Vous méritez une salle de bain élégante et sophistiquée, et chez OC Stone, nous avons ce qu’il vous faut !<br><br>Découvrez notre large choix de vasques en pierre naturelle : travertin ou marbre, simples ou travaillées, et aux formes très variées voire inédites: rondes, ovales, carrées, rectangulaires, sur pied... Elles donneront à coup sur une touche de luxe à votre espace de bain.</p>
+                </div>
+                <div class="product-image hover-lift">
+                    <img src="images/san_vasque.png" alt="Vasques en pierre naturelle">
+                </div>
+            </div>
+
+            <!-- Note about stock -->
+            <div class="text-center mt-section pt-section">
+                <h3>Nos autres équipements</h3>
+                <p>Nous vous proposons également une très large gamme de robinetterie moderne (design mural ou sur pied) et de toilettes suspendues élégantes, renouvelées lors de nos arrivages réguliers en showroom.</p>
+            </div>
+
+        </section>
+
+        <section class="cta-section mt-section">
+            <div class="container container-narrow text-center effect-morphing">
+                <h2>Besoin d'un conseil personnalisé ?</h2>
+                <p>Nos experts sont là pour affiner votre choix et vous proposer un chiffrage précis.</p>
+                <a href="showroom.html" class="btn-primary btn-large mt-4">Nous rendre visite en showroom</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
