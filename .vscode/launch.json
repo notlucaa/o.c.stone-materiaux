@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Lancer Accueil dans Chrome",
+            "file": "${workspaceFolder}/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Lancer sans debug (En cas d'erreur)",
+            "file": "${workspaceFolder}/index.html",
+            "noDebug": true
+        }
+    ]
+}
