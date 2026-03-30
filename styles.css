@@ -332,8 +332,8 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 .pillar-date {
     display: inline-block;
     padding: 0.3rem 0.8rem;
-    background: #e2e8f0;
-    color: var(--text-main);
+    background: rgba(205, 168, 105, 0.1);
+    color: var(--primary);
     border-radius: 4px;
     font-weight: 500;
     font-size: 0.8rem;
@@ -343,7 +343,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 /* CTA Section */
 .cta-section {
     padding: 8rem 2rem;
-    background: linear-gradient(135deg, var(--bg) 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, rgba(205, 168, 105, 0.05) 0%, var(--bg) 100%);
     position: relative;
     z-index: 5;
 }
@@ -357,8 +357,8 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 
 /* Footer */
 footer {
-    background-color: #0f172a;
-    color: #e2e8f0;
+    background-color: #08080a;
+    color: var(--text-muted);
     text-align: center;
     padding: 3rem 2rem;
     position: relative;
