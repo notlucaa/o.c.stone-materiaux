@@ -61,6 +61,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 }
 .container-narrow { max-width: 800px; margin: 0 auto; }
 .text-center { text-align: center; }
+.text-left { text-align: left; }
 .mt-4 { margin-top: 1.5rem; }
 
 .btn-primary, .btn-secondary {
@@ -119,8 +120,8 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     padding: 1.5rem 4rem;
     z-index: 100;
     background: rgba(248, 250, 252, 0.8);
-    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .navbar .logo {
@@ -129,6 +130,10 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #0f172a;
+}
+.navbar .logo img {
+    height: 40px;
+    width: auto;
 }
 .navbar nav {
     display: flex;
@@ -152,6 +157,10 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     justify-content: center;
     text-align: center;
     overflow: hidden;
+}
+
+.hero-small {
+    min-height: 50vh;
 }
 
 .hero-content {
@@ -200,6 +209,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 
 /* Sections */
 .pt-section { padding-top: 8rem; padding-bottom: 8rem; }
+.mt-section { margin-top: 5rem; }
 .bg-light { background-color: #ffffff; position: relative; z-index: 5;}
 
 .subheading {
@@ -223,19 +233,44 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     margin: 0 auto;
     text-align: center;
 }
+.about-text.full-width-left {
+    text-align: left;
+    max-width: 100%;
+}
+.about-content-split {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about-content-column {
+    flex: 1;
+    min-width: 300px;
+}
+.about-featured-image {
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
 /* Cards */
 .pillars-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
+}
+
+.pillar-img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .glass-card {
     background: var(--glass-bg);
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border);
     border-radius: 1.5rem;
     padding: 3rem;
@@ -293,3 +328,13 @@ footer {
     .navbar { padding: 1.5rem 2rem; }
     .navbar nav { display: none; } /* Mobile menu needed logic later */
 }
+
+/* Utilities extracted from inline styles */
+.pt-10rem { padding-top: 10rem; }
+.m-auto { margin: 0 auto; }
+.mt-4rem { margin-top: 4rem; }
+.mt-1rem { margin-top: 1rem; }
+.mt-1-5rem { margin-top: 1.5rem; }
+.text-main-strong { color: var(--text-main); font-weight: 500; }
+.link-cta { color: var(--cta); text-decoration: underline; }
+.title-cta-sm { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--cta); }
