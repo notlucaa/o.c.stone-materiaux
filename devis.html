@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis | OC Stone Matériaux</title>
+    <meta name="description" content="Remplissez notre formulaire de demande de devis pour obtenir une estimation personnalisée pour votre projet.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo-orange.png" alt="OC Stone Logo">
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">L'Entreprise</a>
+            <div class="nav-dropdown">
+                <a href="materiaux.html">Nos Matériaux ▼</a>
+                <div class="dropdown-content">
+                    <a href="carrelages.html">Carrelages</a>
+                    <a href="travertin.html">Travertin</a>
+                    <a href="faience.html">Faïence</a>
+                    <a href="sanitaires.html">Sanitaires</a>
+                    <a href="salle-de-bain.html">Salle de bain</a>
+                    <a href="deco.html">Déco</a>
+                </div>
+            </div>
+            <a href="showroom.html">Showroom</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="devis.html" class="active btn-primary">Demander un devis</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-section pt-10rem">
+            <div class="container text-center staggered-reveal">
+                <span class="subheading">DEVIS GRATUIT</span>
+                <h1>Notre service Devis</h1>
+                <p class="container-narrow m-auto">Vous cherchez à rénover votre salle de bain ou votre cuisine avec de nouveaux carrelages ? Ou bien vous êtes en train de construire une nouvelle maison et vous avez besoin d’un fournisseur fiable pour votre projet ?<br><br>Chez OC Stone, nous sommes fiers de fournir à nos clients des produits de qualité supérieure. N’hésitez pas à nous contacter !</p>
+            </div>
+
+            <div class="container devis-grid mt-4rem">
+                <div class="devis-text about-text full-width-left">
+                    <h2>Parlons de votre projet</h2>
+                    <p>Notre équipe de professionnels expérimentés est là pour vous aider à trouver les meilleures solutions. Nous offrons une grande variété de styles, de couleurs et de tailles de carreaux pour répondre à tous vos besoins.</p>
+                    <p>Pour obtenir une estimation de prix personnalisée pour votre projet, remplissez simplement notre formulaire de demande de devis en ligne. Nous prendrons en compte toutes les spécificités de votre projet, y compris la surface à couvrir, le type préféré, et bien plus encore. Nous vous fournirons ensuite une estimation claire et détaillée.</p>
+                    <br>
+                    <h3 class="title-cta-sm mt-1rem">📍 SAS OGUZ / OC Stone Matériaux</h3>
+                    <p>401 Av. des Entrepreneurs<br>83560 Vinon-sur-Verdon</p>
+                    <p><strong>Tél :</strong> +33 4 13 37 00 34</p>
+                    <p><strong>Port :</strong> +33 6 14 49 66 44</p>
+                    <p><strong>Email :</strong> contact@ocstone.fr</p>
+                </div>
+
+                <div class="glass-card contact-form-card">
+                    <h3 class="mb-1rem">Votre message</h3>
+                    <form action="#" method="POST" class="custom-form">
+                        <div class="form-group">
+                            <label for="name">Nom / Prénom</label>
+                            <input type="text" id="name" name="name" required class="form-control" title="Nom et Prénom" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required class="form-control" title="Adresse email" placeholder="email@exemple.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required class="form-control" title="Numéro de téléphone" placeholder="06 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Votre projet (Carrelage, piscine, salle de bain...)</label>
+                            <textarea id="project" name="project" rows="4" required class="form-control" title="Description de votre projet" placeholder="Décrivez votre projet ici..."></textarea>
+                        </div>
+                        <div class="form-check mt-1rem">
+                            <input type="checkbox" id="rgpd" required title="Accepter la politique de confidentialité">
+                            <label for="rgpd" class="form-check-label">Oui, j'accepte la politique de confidentialité.</label>
+                        </div>
+                        <button type="submit" class="btn-primary w-100 mt-1-5rem btn-submit">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-4rem">
+        <div class="footer-bottom">
+            <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
