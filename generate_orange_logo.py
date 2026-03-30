@@ -20,12 +20,13 @@ try:
         r, g, b, a = item
         # Detect yellow colors
         if a > 0 and r > 150 and g > 130 and b < 100:
-            new_data.append((255, 90, 0, a))
+            # Softer orange #de6b21: 222, 107, 33
+            new_data.append((222, 107, 33, a))
         else:
             new_data.append(item)
 
     img.putdata(new_data)
     img.save(img_path, "PNG")
-    print("Success")
+    print("Success replacing color in image")
 except Exception as e:
     print(f"Failed to process image: {e}")
