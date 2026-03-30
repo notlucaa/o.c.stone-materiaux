@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demande de Devis | OC Stone Matériaux</title>
-    <meta name="description" content="Remplissez notre formulaire de demande de devis pour obtenir une estimation personnalisée pour votre projet.">
+    <title>Demander un Devis | OC Stone Matériaux</title>
+    <meta name="description" content="Démarrez votre projet avec OC Stone Matériaux. Demandez un devis gratuit pour votre carrelage, travertin ou aménagement.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .devis-hero-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 70vh;
+            padding-top: 8rem;
+        }
+        .devis-hero-img img {
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            object-fit: cover;
+            height: 100%;
+            max-height: 600px;
+            width: 100%;
+        }
+        .step-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 8rem;
+        }
+        .step-card {
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-top: 3px solid var(--primary);
+        }
+        .step-num {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            color: var(--primary);
+            opacity: 0.5;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .form-row {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .form-row .form-group {
+            margin-bottom: 0;
+            flex: 1;
+        }
+        .contact-info-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 900px) {
+            .devis-hero-split { grid-template-columns: 1fr; gap: 2rem; }
+            .step-cards { grid-template-columns: 1fr; }
+            .form-row { flex-direction: column; gap: 1.25rem; }
+            .contact-info-boxes { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -35,61 +94,131 @@
     </header>
 
     <main>
-        <section class="pt-section pt-10rem">
-            <div class="container text-center staggered-reveal">
-                <span class="subheading">DEVIS GRATUIT</span>
-                <h1>Notre service Devis</h1>
-                <p class="container-narrow m-auto">Vous cherchez à rénover votre salle de bain ou votre cuisine avec de nouveaux carrelages ? Ou bien vous êtes en train de construire une nouvelle maison et vous avez besoin d’un fournisseur fiable pour votre projet ?<br><br>Chez OC Stone, nous sommes fiers de fournir à nos clients des produits de qualité supérieure. N’hésitez pas à nous contacter !</p>
+        <!-- Ambient orbs -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <section class="container">
+            <div class="devis-hero-split staggered-reveal">
+                <div>
+                    <span class="subheading">LE CHOIX DE L'EXCELLENCE</span>
+                    <h1 style="font-size: 3.8rem; margin-bottom: 1.5rem;">Coup d'envoi de votre projet.</h1>
+                    <p style="font-size: 1.15rem; color: var(--text-muted); margin-bottom: 2rem;">Vous cherchez à rénover votre salle de bain avec de nouveaux carrelages ? Ou bien vous êtes en train de construire et avez besoin d’un fournisseur fiable ? <br><br>Notre équipe de professionnels expérimentés est là pour vous aider à trouver les meilleures solutions, en alliant matériaux durables et esthétisme intemporel.</p>
+                    
+                    <a href="#formulaire" class="btn-primary" style="display: inline-block; padding: 1rem 2rem; font-size: 1.1rem;">Démarrer mon devis <span style="margin-left:8px;">↓</span></a>
+                </div>
+                <div class="devis-hero-img hover-lift">
+                    <img src="images/carrelage_marbre.png" alt="Marbre haut de gamme OC Stone">
+                </div>
             </div>
 
-            <div class="container devis-grid mt-4rem">
-                <div class="devis-text about-text full-width-left">
-                    <h2>Parlons de votre projet</h2>
-                    <p>Notre équipe de professionnels expérimentés est là pour vous aider à trouver les meilleures solutions. Nous offrons une grande variété de styles, de couleurs et de tailles de carreaux pour répondre à tous vos besoins.</p>
-                    <p>Pour obtenir une estimation de prix personnalisée pour votre projet, remplissez simplement notre formulaire de demande de devis en ligne. Nous prendrons en compte toutes les spécificités de votre projet, y compris la surface à couvrir, le type préféré, et bien plus encore. Nous vous fournirons ensuite une estimation claire et détaillée.</p>
-                    <br>
-                    <h3 class="title-cta-sm mt-1rem">📍 SAS OGUZ / OC Stone Matériaux</h3>
-                    <p>401 Av. des Entrepreneurs<br>83560 Vinon-sur-Verdon</p>
-                    <p><strong>Tél :</strong> +33 4 13 37 00 34</p>
-                    <p><strong>Port :</strong> +33 6 14 49 66 44</p>
-                    <p><strong>Email :</strong> contact@ocstone.fr</p>
+            <!-- Steps Section -->
+            <div class="step-cards staggered-reveal">
+                <div class="glass-card step-card hover-lift">
+                    <span class="step-num">01</span>
+                    <h3>Exprimez votre besoin</h3>
+                    <p style="font-size: 0.95rem; margin-top: 1rem;">Remplissez rapidement notre formulaire. Type de matériau, surface estimée, délais : dites-nous tout.</p>
                 </div>
+                <div class="glass-card step-card hover-lift">
+                    <span class="step-num">02</span>
+                    <h3>Étude sur-mesure</h3>
+                    <p style="font-size: 0.95rem; margin-top: 1rem;">Nos conseillers analysent vos informations pour proposer le chiffrage le plus pertinent selon vos critères.</p>
+                </div>
+                <div class="glass-card step-card hover-lift">
+                    <span class="step-num">03</span>
+                    <h3>Validation & Livraison</h3>
+                    <p style="font-size: 0.95rem; margin-top: 1rem;">Validez la proposition technique et planifions ensemble le retrait ou la livraison sécurisée de vos matériaux.</p>
+                </div>
+            </div>
+        </section>
 
-                <div class="glass-card contact-form-card">
-                    <h3 class="mb-1rem">Votre message</h3>
+        <!-- Form Section -->
+        <section id="formulaire" class="bg-light pt-section">
+            <div class="container devis-grid">
+                
+                <!-- Left: Form -->
+                <div class="glass-card contact-form-card effect-morphing">
+                    <h2 class="mb-1rem">Obtenir une tarification</h2>
+                    <p style="margin-bottom: 2rem; font-size: 0.95rem;">Remplissez simplement les champs ci-dessous. Nous vous rappelons sous 48h ouvrées.</p>
+                    
                     <form action="#" method="POST" class="custom-form">
-                        <div class="form-group">
-                            <label for="name">Nom / Prénom</label>
-                            <input type="text" id="name" name="name" required class="form-control" title="Nom et Prénom" placeholder="John Doe">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">Prénom</label>
+                                <input type="text" id="firstname" name="firstname" required class="form-control" title="Prénom" placeholder="Saisissez votre prénom">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nom</label>
+                                <input type="text" id="lastname" name="lastname" required class="form-control" title="Nom de famille" placeholder="Saisissez votre nom">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required class="form-control" title="Adresse email" placeholder="email@exemple.com">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required class="form-control" title="Adresse email" placeholder="email@exemple.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" required class="form-control" title="Numéro de téléphone" placeholder="06 12 34 56 78">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" required class="form-control" title="Numéro de téléphone" placeholder="06 12 34 56 78">
+                        
+                        <div class="form-group mb-1.5rem" style="margin-bottom: 1.25rem;">
+                            <label for="material_type">Type de matériaux désiré</label>
+                            <select id="material_type" name="material_type" class="form-control" required title="Choisissez un type">
+                                <option value="" disabled selected>Sélectionnez une catégorie...</option>
+                                <option value="carrelage">Carrelage (Intérieur / Extérieur)</option>
+                                <option value="travertin">Travertin (Dallages, Margelles, Parement)</option>
+                                <option value="faience">Faïence (Murs, Crédences)</option>
+                                <option value="sanitaires">Sanitaires & Salle de bain</option>
+                                <option value="deco">Déco Extérieure (Pierres, Fontaines)</option>
+                                <option value="autre">Autre projet</option>
+                            </select>
                         </div>
+
                         <div class="form-group">
-                            <label for="project">Votre projet (Carrelage, piscine, salle de bain...)</label>
-                            <textarea id="project" name="project" rows="4" required class="form-control" title="Description de votre projet" placeholder="Décrivez votre projet ici..."></textarea>
+                            <label for="project">Détails supplémentaires (Surface m², délais...)</label>
+                            <textarea id="project" name="project" rows="5" required class="form-control" title="Description détaillée" placeholder="Décrivez votre projet le plus précisément possible..."></textarea>
                         </div>
-                        <div class="form-check mt-1rem">
+                        
+                        <div class="form-check" style="margin-top: 1.5rem; margin-bottom: 2rem;">
                             <input type="checkbox" id="rgpd" required title="Accepter la politique de confidentialité">
-                            <label for="rgpd" class="form-check-label">Oui, j'accepte la politique de confidentialité.</label>
+                            <label for="rgpd" class="form-check-label">J'accepte que mes données soient utilisées pour le traitement de mon devis.</label>
                         </div>
-                        <button type="submit" class="btn-primary w-100 mt-1-5rem btn-submit">Envoyer ma demande</button>
+                        
+                        <button type="submit" class="btn-primary btn-submit hover-lift">Envoyer ma demande sécurisée</button>
                     </form>
                 </div>
+
+                <!-- Right: Contact Direct -->
+                <div class="devis-text about-text full-width-left">
+                    <span class="subheading">BESOIN DE CONSEILS IMMÉDIATS ?</span>
+                    <h2>Rencontrons-nous sans attendre.</h2>
+                    <p>Si votre projet nécessite une étude complexe, ou si vous préférez discuter directement avec un conseiller technique pour affiner vos choix de matériaux :</p>
+                    
+                    <div class="contact-info-boxes">
+                        <div class="glass-card" style="padding: 1.5rem; border-left: 3px solid var(--primary);">
+                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary);">Par Téléphone</h4>
+                            <p style="margin-bottom: 0;"><strong>Bureau :</strong> +33 4 13 37 00 34</p>
+                            <p style="margin-bottom: 0;"><strong>Port :</strong> +33 6 14 49 66 44</p>
+                        </div>
+                        <div class="glass-card" style="padding: 1.5rem; border-left: 3px solid var(--primary);">
+                            <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary);">En Showroom</h4>
+                            <p style="margin-bottom: 0;">401 Av. des Entrepreneurs</p>
+                            <p style="margin-bottom: 0;">83560 Vinon-sur-Verdon</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="mt-4rem">
+    <footer class="mt-4rem" style="margin-top: 0;">
         <div class="footer-bottom">
             <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
         </div>
     </footer>
 </body>
 </html>
-
