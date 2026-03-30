@@ -446,3 +446,22 @@ footer {
 .a-inherit { color: inherit; text-decoration: none; }
 .rounded-3xl { border-radius: 2rem; }
 .p-4rem { padding: 4rem; }
+
+/* Devis specific & global utilities */
+.fs-3-8rem { font-size: 3.8rem; }
+.fs-1-15rem { font-size: 1.15rem; }
+.fs-1-1rem { font-size: 1.1rem; }
+.fs-0-95rem { font-size: 0.95rem; }
+.mb-0 { margin-bottom: 0; }
+.mb-0-5rem { margin-bottom: 0.5rem; }
+.mb-1-25rem { margin-bottom: 1.25rem; }
+.mb-1-5rem { margin-bottom: 1.5rem; }
+.mb-2rem { margin-bottom: 2rem; }
+.mt-0 { margin-top: 0; }
+.pd-1-2rem { padding: 1rem 2rem; }
+.ml-8px { margin-left: 8px; }
+.color-muted { color: var(--text-muted); }
+.color-primary { color: var(--primary); }
+.d-inline-block { display: inline-block; }
+.border-l-primary { border-left: 3px solid var(--primary); }
+.p-1-5rem { padding: 1.5rem; }
