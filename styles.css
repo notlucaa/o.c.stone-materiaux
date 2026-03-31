@@ -345,7 +345,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 
 /* CTA Section */
 .cta-section {
-    padding: 8rem 2rem;
+    padding: 4rem 2rem;
     background: linear-gradient(135deg, rgba(222, 107, 33, 0.05) 0%, var(--bg) 100%);
     position: relative;
     z-index: 5;
@@ -373,6 +373,10 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     gap: 3rem;
     text-align: left;
     padding-bottom: 3rem;
+}
+.footer-logo {
+    height: 40px;
+    width: auto;
 }
 .footer-col h4 {
     color: var(--text-main);
@@ -617,6 +621,42 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 .testimonials-section {
     position: relative;
 }
+.rating-summary {
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.75rem 2rem;
+    border-radius: 99px;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.rating-score {
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+.rating-stars {
+    letter-spacing: 2px;
+}
+.rating-count {
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+}
+.testimonials-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.testimonials-window {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1.5rem;
+    padding-bottom: 3rem;
+    margin-bottom: -3rem;
+}
 .testimonials-track {
     display: flex;
     transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
@@ -627,6 +667,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     flex-direction: column;
     min-width: calc(50% - 1.5rem);
     flex: 0 0 calc(50% - 1.5rem);
+    padding: 2.5rem;
 }
 .slider-arrow {
     background: rgba(255,255,255,0.05);
@@ -671,6 +712,9 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 }
 .testimonial-header .bg-primary { background-color: var(--primary); }
 .testimonial-header .bg-green { background-color: #0f9d58; }
+.testimonial-header .bg-orange { background-color: #d15810; }
+.testimonial-header .bg-teal { background-color: #0097a7; }
+.testimonial-header .bg-dark-orange { background-color: #e65100; }
 
 .user-info {
     display: flex;
