@@ -3,11 +3,11 @@
     --secondary: #c75712;
     --cta: #de6b21;
     --cta-hover: #f07f35;
-    --bg: #0f1013; /* Very dark slate, almost black */
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --glass-bg: rgba(25, 26, 30, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.06);
+    --bg: #f5f0e6;
+    --text-main: #1a1b1e;
+    --text-muted: #4a5568;
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    --glass-border: rgba(0, 0, 0, 0.08);
     
     --font-heading: 'Cormorant', serif;
     --font-body: 'Montserrat', sans-serif;
@@ -23,15 +23,15 @@
 
 body {
     font-family: var(--font-body);
-    background-color: var(--bg);
+    background-color: #f5f0e6;
     background-image: 
-        radial-gradient(circle at top right, rgba(40, 45, 55, 0.8), transparent 50%),
-        radial-gradient(circle at bottom left, rgba(60, 45, 30, 0.7), transparent 60%),
-        url('./images/nero_portoro_marble_texture.png');
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.4), transparent 50%),
+        radial-gradient(circle at bottom left, rgba(230, 210, 180, 0.3), transparent 60%),
+        url('./images/beige_black_marble_texture.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: var(--text-main);
+    color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -222,9 +222,9 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 
 .hero-bg {
     background-image: 
-        radial-gradient(circle at top right, rgba(40, 45, 55, 0.8), transparent 50%),
-        radial-gradient(circle at bottom left, rgba(60, 45, 30, 0.7), transparent 60%),
-        url('./images/nero_portoro_marble_texture.png');
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.4), transparent 50%),
+        radial-gradient(circle at bottom left, rgba(230, 210, 180, 0.3), transparent 60%),
+        url('./images/beige_black_marble_texture.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
