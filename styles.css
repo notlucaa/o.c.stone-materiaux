@@ -6,7 +6,7 @@
     --bg: #f5f0e6;
     --text-main: #0a0a0c;
     --text-muted: #2d3748;
-    --glass-bg: rgba(240, 240, 245, 0.85);
+    --glass-bg: rgba(255, 255, 255, 0.75);
     --glass-border: rgba(0, 0, 0, 0.1);
     
     --font-heading: 'Cormorant', serif;
@@ -388,6 +388,10 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     padding: 3rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
     transition: var(--transition);
+}
+
+.gray-card {
+    background: rgba(235, 235, 240, 0.9) !important;
 }
 
 .hover-lift:hover {
