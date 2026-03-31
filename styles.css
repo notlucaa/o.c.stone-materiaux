@@ -413,6 +413,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 
 /* CTA Section */
 .cta-section {
+    margin-top: 10rem;
     padding: 4rem 2rem;
     background: linear-gradient(135deg, rgba(222, 107, 33, 0.05) 0%, var(--bg) 100%);
     position: relative;
