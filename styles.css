@@ -6,7 +6,7 @@
     --bg: #f5f0e6;
     --text-main: #0a0a0c;
     --text-muted: #2d3748;
-    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-bg: rgba(240, 240, 245, 0.85);
     --glass-border: rgba(0, 0, 0, 0.1);
     
     --font-heading: 'Cormorant', serif;
@@ -322,7 +322,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 /* Sections */
 .pt-section { padding-top: 8rem; padding-bottom: 8rem; }
 .mt-section { margin-top: 5rem; }
-.bg-light { background-color: rgba(255, 255, 255, 0.6); position: relative; z-index: 5; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);}
+.bg-light { background-color: rgba(230, 230, 235, 0.5); position: relative; z-index: 5; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);}
 
 .subheading {
     display: block;
