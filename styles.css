@@ -322,7 +322,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 /* Sections */
 .pt-section { padding-top: 8rem; padding-bottom: 8rem; }
 .mt-section { margin-top: 5rem; }
-.bg-light { background-color: rgba(25, 26, 30, 0.8); position: relative; z-index: 5; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);}
+.bg-light { background-color: rgba(255, 255, 255, 0.6); position: relative; z-index: 5; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);}
 
 .subheading {
     display: block;
