@@ -220,6 +220,67 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     padding: 0 2rem;
 }
 
+.hero-bg {
+    background-image: 
+        radial-gradient(circle at top right, rgba(40, 45, 55, 0.8), transparent 50%),
+        radial-gradient(circle at bottom left, rgba(60, 45, 30, 0.7), transparent 60%),
+        url('./images/nero_portoro_marble_texture.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10rem 2rem 5rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.product-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.product-split {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.product-split:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.product-split img {
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.product-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .product-split,
+    .product-split:nth-child(even) {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .product-split img {
+        max-height: 350px;
+    }
+}
+
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
