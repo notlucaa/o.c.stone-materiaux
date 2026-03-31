@@ -124,7 +124,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 4rem;
+    padding: 0.75rem 4rem;
     z-index: 100;
     background: rgba(255, 255, 255, 0.85);
     -webkit-backdrop-filter: blur(12px);
@@ -139,7 +139,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     color: var(--text-main);
 }
 .navbar .logo img {
-    height: 55px;
+    height: 45px;
     width: auto;
 }
 .navbar nav {
