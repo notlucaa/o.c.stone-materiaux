@@ -191,7 +191,8 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     background-color: rgba(0, 0, 0, 0.03);
     color: var(--cta);
 }
-.nav-dropdown:hover .dropdown-content {
+.nav-dropdown:hover .dropdown-content,
+.nav-dropdown.active .dropdown-content {
     display: block;
     opacity: 1;
     top: 100%;
@@ -437,7 +438,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+    grid-template-columns: 2fr 1fr 1.5fr;
     gap: 3rem;
     text-align: left;
     padding-bottom: 3rem;
@@ -483,7 +484,7 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     color: var(--cta);
 }
 @media (max-width: 900px) {
-    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .footer-grid { grid-template-columns: 1fr 1.2fr; gap: 2rem; }
     .footer-bottom-bar { flex-direction: column; gap: 1rem; text-align: center; }
     .footer-bottom-links a { margin: 0 0.75rem; }
 }
@@ -556,7 +557,138 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     .hero-buttons { flex-direction: column; }
     .pillars-grid { grid-template-columns: 1fr; }
     .navbar { padding: 1.5rem 2rem; }
-    .navbar nav { display: none; } /* Mobile menu needed logic later */
+    .navbar nav { display: none; }
+    .nav-actions { display: none; }
+    
+    .navbar.mobile-active {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #fff;
+        padding-top: 2rem;
+        overflow-y: auto;
+    }
+
+    .mobile-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--text-main);
+        z-index: 1001;
+    }
+    
+    .navbar.mobile-active .mobile-toggle {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    
+    .navbar.mobile-active nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 4rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar.mobile-active nav a {
+        font-size: 1.5rem;
+        font-family: var(--font-heading);
+        font-weight: 600;
+        color: var(--text-main);
+    }
+
+    .navbar.mobile-active .nav-actions {
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    .navbar.mobile-active .logo {
+        margin-bottom: 2rem;
+    }
+
+    .navbar.mobile-active .nav-dropdown .dropdown-content {
+        position: static;
+        display: block;
+        opacity: 1;
+        box-shadow: none;
+        background: transparent;
+        padding-left: 1rem;
+        border: none;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+    
+    .navbar.mobile-active .dropdown-content a {
+        padding: 8px 0;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .navbar.mobile-active .no-nav {
+        font-weight: 700;
+        color: var(--primary);
+    }
+
+    .testimonial-card {
+        min-width: 100%;
+        flex: 0 0 100%;
+        padding: 1.5rem; /* Reduced padding on mobile */
+    }
+
+    .testimonials-track {
+        gap: 1rem; /* Reduced gap on mobile */
+    }
+    
+    .navbar {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .testimonial-card {
+        min-width: 100%;
+        flex: 0 0 100%;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem; /* Space between avis */
+    }
+
+    .testimonials-track {
+        flex-direction: column; /* Vertical stack */
+        gap: 0;
+        transform: none !important; /* Ignore carousel transform */
+    }
+
+    .slider-arrow {
+        display: none !important; /* Hide arrows on mobile */
+    }
+    
+    .testimonials-window {
+        overflow: visible; /* Allow scrolling/visibility */
+    }
+
+    .testimonial-header .avatar {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .user-info .user-name {
+        font-size: 0.9rem;
+    }
+
+    .stars {
+        font-size: 1rem;
+    }
+}
+
+.mobile-toggle {
+    display: none;
 }
 
 /* Utilities extracted from inline styles */
@@ -742,6 +874,8 @@ p { margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.1rem; }
     min-width: calc(50% - 1.5rem);
     flex: 0 0 calc(50% - 1.5rem);
     padding: 2.5rem;
+    box-sizing: border-box; 
+    flex-shrink: 0; /* Never shrink cards */
 }
 .slider-arrow {
     background: rgba(255,255,255,0.05);

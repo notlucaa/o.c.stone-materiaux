@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demander un Devis | OC Stone Matériaux</title>
-    <meta name="description" content="Démarrez votre projet avec OC Stone Matériaux. Demandez un devis gratuit pour votre carrelage, travertin ou aménagement.">
+    <meta name="description"
+        content="Démarrez votre projet avec OC Stone Matériaux. Demandez un devis gratuit pour votre carrelage, travertin ou aménagement.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <style>
         .devis-hero-split {
             display: grid;
@@ -16,14 +20,16 @@
             min-height: 70vh;
             padding-top: 8rem;
         }
+
         .devis-hero-img img {
             border-radius: 1rem;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             object-fit: cover;
             height: 100%;
             max-height: 600px;
             width: 100%;
         }
+
         .step-cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -31,11 +37,13 @@
             margin-top: 4rem;
             margin-bottom: 8rem;
         }
+
         .step-card {
             padding: 2.5rem 1.5rem;
             text-align: center;
             border-top: 3px solid var(--primary);
         }
+
         .step-num {
             font-size: 3rem;
             font-family: var(--font-heading);
@@ -44,32 +52,61 @@
             margin-bottom: 0.5rem;
             display: block;
         }
+
         .form-row {
             display: flex;
             gap: 1.5rem;
             margin-bottom: 1.25rem;
         }
+
         .form-row .form-group {
             margin-bottom: 0;
             flex: 1;
         }
+
         .contact-info-boxes {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             margin-top: 3rem;
         }
+
         @media (max-width: 900px) {
-            .devis-hero-split { grid-template-columns: 1fr; gap: 2rem; }
-            .step-cards { grid-template-columns: 1fr; }
-            .form-row { flex-direction: column; gap: 1.25rem; }
-            .contact-info-boxes { grid-template-columns: 1fr; }
-            .devis-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-            .contact-form-card { padding: 1.5rem !important; }
-            .pt-section { padding-top: 4rem; padding-bottom: 4rem; }
+            .devis-hero-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .step-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 1.25rem;
+            }
+
+            .contact-info-boxes {
+                grid-template-columns: 1fr;
+            }
+
+            .devis-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2.5rem !important;
+            }
+
+            .contact-form-card {
+                padding: 1.5rem !important;
+            }
+
+            .pt-section {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">
@@ -106,28 +143,33 @@
                 <!-- Left: Form -->
                 <div class="glass-card contact-form-card effect-morphing">
                     <h1 class="mb-1rem">Demander un devis</h1>
-                    <p class="mb-2rem fs-0-95rem">Remplissez simplement les champs ci-dessous pour votre projet de carrelage, travertin ou aménagement. Nous vous rappelons sous 48h ouvrées.</p>
-                    
+                    <p class="mb-2rem fs-0-95rem">Remplissez simplement les champs ci-dessous pour votre projet de
+                        carrelage, travertin ou aménagement. Nous vous rappelons sous 48h ouvrées.</p>
+
                     <form action="#" method="POST" class="custom-form">
                         <div class="form-group">
                             <label for="fullname">Nom & Prénom</label>
-                            <input type="text" id="fullname" name="fullname" required class="form-control" title="Nom complet" placeholder="Saisissez votre nom complet">
+                            <input type="text" id="fullname" name="fullname" required class="form-control"
+                                title="Nom complet" placeholder="Saisissez votre nom complet">
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone" required class="form-control" title="Numéro de téléphone" placeholder="06 12 34 56 78">
+                                <input type="tel" id="phone" name="phone" required class="form-control"
+                                    title="Numéro de téléphone" placeholder="06 12 34 56 78">
                             </div>
                             <div class="form-group">
-                                <label for="email">E-mail (Optionnel)</label>
-                                <input type="email" id="email" name="email" class="form-control" title="Adresse email" placeholder="email@exemple.com">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" title="Adresse email"
+                                    placeholder="email@exemple.com">
                             </div>
                         </div>
-                        
+
                         <div class="form-group mb-1-25rem">
                             <label for="material_type">Type de matériaux désiré</label>
-                            <select id="material_type" name="material_type" class="form-control" required title="Choisissez un type">
+                            <select id="material_type" name="material_type" class="form-control" required
+                                title="Choisissez un type">
                                 <option value="" disabled selected>Sélectionnez une catégorie...</option>
                                 <option value="carrelage">Carrelage (Intérieur / Extérieur)</option>
                                 <option value="travertin">Travertin (Dallages, Margelles, Parement)</option>
@@ -140,15 +182,19 @@
 
                         <div class="form-group">
                             <label for="project">Détails supplémentaires (Surface m², délais...)</label>
-                            <textarea id="project" name="project" rows="5" required class="form-control" title="Description détaillée" placeholder="Décrivez votre projet le plus précisément possible..."></textarea>
+                            <textarea id="project" name="project" rows="5" required class="form-control"
+                                title="Description détaillée"
+                                placeholder="Décrivez votre projet le plus précisément possible..."></textarea>
                         </div>
-                        
+
                         <div class="form-check mt-1-5rem mb-2rem">
                             <input type="checkbox" id="rgpd" required title="Accepter la politique de confidentialité">
-                            <label for="rgpd" class="form-check-label">J'accepte que mes données soient utilisées pour le traitement de mon devis.</label>
+                            <label for="rgpd" class="form-check-label">J'accepte que mes données soient utilisées pour
+                                le traitement de mon devis.</label>
                         </div>
-                        
-                        <button type="submit" class="btn-primary btn-submit hover-lift">Envoyer ma demande sécurisée</button>
+
+                        <button type="submit" class="btn-primary btn-submit hover-lift">Envoyer ma demande
+                            sécurisée</button>
                     </form>
                 </div>
             </div>
@@ -159,9 +205,10 @@
         <div class="footer-grid container">
             <div class="footer-col">
                 <img src="images/logo-orange.png" alt="OC Stone Logo" class="mb-1-5rem footer-logo">
-                <p class="fs-0-95rem">Spécialiste du travertin, de la pierre naturelle, des carrelages et de l'aménagement extérieur en région Provence-Alpes-Côte d'Azur.</p>
+                <p class="fs-0-95rem">Spécialiste du travertin, de la pierre naturelle, des carrelages et de
+                    l'aménagement extérieur en région Provence-Alpes-Côte d'Azur.</p>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Navigation</h4>
                 <ul>
@@ -171,30 +218,19 @@
                     <li><a href="devis.html">Demander un Devis</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="https://maps.app.goo.gl/pUawkvNC47tRd5L9A" target="_blank" rel="noopener">📍 401 Av. des Entrepreneurs<br>83560 Vinon-sur-Verdon</a></li>
+                    <li><a href="https://maps.app.goo.gl/pUawkvNC47tRd5L9A" target="_blank" rel="noopener">📍 401 Av.
+                            des Entrepreneurs<br>83560 Vinon-sur-Verdon</a></li>
                     <li class="mt-1rem"><a href="tel:+33413370034">📞 Bureau: 04 13 37 00 34</a></li>
                     <li><a href="tel:+33614496644">📱 Port: 06 14 49 66 44</a></li>
                     <li><a href="mailto:contact@ocstone.fr">✉️ contact@ocstone.fr</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-col">
-                <h4>Horaires</h4>
-                <ul class="fs-0-95rem">
-                    <li><strong class="color-primary">Heure d'été :</strong></li>
-                    <li>Lun - Ven: 7h30-12h • 14h-18h</li>
-                    <li class="mb-1rem">Samedi: 8h-12h • 14h-17h</li>
-                    <li><strong class="color-primary">Heure d'hiver :</strong></li>
-                    <li>Lun - Ven: 7h30-12h • 13h30-17h</li>
-                    <li>Samedi: 8h-12h • 13h30-17h</li>
-                </ul>
-            </div>
         </div>
-        
+
         <div class="footer-bottom-bar container">
             <p>&copy; 2025 OC MATERIAUX. Tous droits réservés.</p>
             <div class="footer-bottom-links">
@@ -203,5 +239,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -205,45 +205,6 @@
                 <!-- Bouton Suivant -->
                 <button class="slider-arrow" id="review-next">❯</button>
             </div>
-        </section>
-
-        <!-- Slider Script -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const track = document.getElementById("review-track");
-                const prevBtn = document.getElementById("review-prev");
-                const nextBtn = document.getElementById("review-next");
-                let currentIndex = 0;
-                
-                nextBtn.addEventListener("click", () => {
-                    const cards = track.children;
-                    const maxIndex = window.innerWidth > 900 ? cards.length - 2 : cards.length - 1;
-                    if (currentIndex < maxIndex) {
-                        currentIndex++;
-                        updateSlider();
-                    }
-                });
-                
-                prevBtn.addEventListener("click", () => {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                        updateSlider();
-                    }
-                });
-
-                function updateSlider() {
-                    const card = track.children[0];
-                    // gap value set in css is 3rem (typically 48px)
-                    const gap = parseFloat(getComputedStyle(track).gap) || 48; 
-                    const cardWidth = card.offsetWidth;
-                    const moveAmount = currentIndex * (cardWidth + gap);
-                    track.style.transform = `translateX(-${moveAmount}px)`;
-                }
-                
-                window.addEventListener("resize", updateSlider);
-            });
-        </script>
-
         <section class="cta-section">
             <div class="container container-narrow text-center effect-morphing">
                 <h2>Envie d'en savoir plus sur nos origines ?</h2>
@@ -279,18 +240,6 @@
                     <li><a href="mailto:contact@ocstone.fr">✉️ contact@ocstone.fr</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-col">
-                <h4>Horaires</h4>
-                <ul class="fs-0-95rem">
-                    <li><strong class="color-primary">Heure d'été :</strong></li>
-                    <li>Lun - Ven: 7h30-12h • 14h-18h</li>
-                    <li class="mb-1rem">Samedi: 8h-12h • 14h-17h</li>
-                    <li><strong class="color-primary">Heure d'hiver :</strong></li>
-                    <li>Lun - Ven: 7h30-12h • 13h30-17h</li>
-                    <li>Samedi: 8h-12h • 13h30-17h</li>
-                </ul>
-            </div>
         </div>
         
         <div class="footer-bottom-bar container">
@@ -301,6 +250,7 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
 
